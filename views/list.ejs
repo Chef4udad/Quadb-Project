@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Our HTML Page</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+</head>
+<body>
+<div class="aParent">
+<h2>HOLDINFO.COM</h2>
+<div class="custom-select-1">
+<select>
+    <option value="0">INR</option>
+</select>
+</div>
+<div class="custom-select-2">
+    <select>
+      <option value="0">BTC</option>
+      <option value="1">ETH</option>
+      <option value="2">USDT</option>
+      <option value="3">XPR</option>
+      <option value="4">TRX</option>
+      <option value="5">DASH</option>
+      <option value="6">ZEC</option>
+      <option value="7">XEM</option>
+      <option value="8">IOST</option>
+      <option value="9">WIN</option>
+      <option value="10">BTT</option>
+      <option value="11">WRX</option>
+    </select>
+  </div>
+  <div class="switch"><span id="cnt" style="color:red;">60</span>Seconds</div>
+  <button id="myButton">Telegram</button>
+  <label class="switch">
+    <input type="checkbox" onclick="myFunction()">
+    <span class="slider round"></span>
+  </label>  
+  </div>
+
+  <table>
+    <tr>
+      <th>#</th>
+      <th>name</th>
+      <th>Last</th>
+      <th>Buy / Sell Price</th>
+      <th>volume</th>
+      <th>base_unit</th>
+    </tr>
+    <%  for(var i=1;i<=10;i++){ %>
+    <tr>
+      <th><%=i%></th>
+      <th><%=t1[i-1]%></th>
+      <th>₹<%=t2[i-1]%></th>
+      <th>₹<%=t3[i-1]%> / ₹<%=t6[i-1]%></th>
+      <th><%=t4[i-1]%></th>
+      <th><%=t5[i-1]%></th>
+    </tr>
+    <%  } %>
+    </table>
+</body>
+<script src="js/logic.js"></script>
+</html>
